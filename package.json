@@ -1,0 +1,21 @@
+{
+  "name": "calc",
+  "version": "1.0.0",
+  "description": "A calculator using web components",
+  "main": "index.js",
+  "scripts": {
+    "test": "parcel  -p 8080  watch  index.js calculator.js index.html ",
+    "build": "parcel index.html calculator.js --no-source-maps"
+  },
+  "keywords": [
+    "calculator"
+  ],
+  "author": "Tov Are Jacobsen",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-plugin-static-files-copy": "^2.3.1"
+  },
+  "dependencies": {
+    "hybrids": "^4.1.3"
+  }
+}
