@@ -149,7 +149,7 @@ const Calculator = {
 
     .operator-button {
       font-family: 'Orbitron', sans-serif;
-      font-size: 0.2e;
+      font-size: 2em;
       background: #5C5A5A;
       color: white;
     }
