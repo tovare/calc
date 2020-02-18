@@ -110,15 +110,15 @@ const Calculator = {
   prenum : 0,
   display: ({inputBuffer,answer}) => makeDisplay(inputBuffer, answer),
   render: ({ display }) => html`
-<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet" type="text/css">
 <style>
-    .display {
+  .display {
       font-family: 'Orbitron', sans-serif;
       font-size: 3.5em;
       grid-column: 1 / 5;
       text-align: right;
       background: #D4E2E3;
-      padding-top: 10px;
+      padding-top: 0.3em;
 
     }
     .number-button {
@@ -126,8 +126,8 @@ const Calculator = {
       font-size: 2em;
       background: #383737;
       color: white;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 0.3em;
+      padding-bottom: 0.3em;
     }
     .number-wide {
       font-family: 'Orbitron', sans-serif;
@@ -135,21 +135,21 @@ const Calculator = {
       grid-column: 1 / 3;
       background: #383737;
       color: white;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 0.3em;
+      padding-bottom: 0.3em;
     }
     .clear-button {
       font-family: 'Orbitron', sans-serif;
       font-size: 2em;
       background: #C16F45;
       color: white;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 0.3em;
+      padding-bottom: 0.3em;
     }
 
     .operator-button {
       font-family: 'Orbitron', sans-serif;
-      font-size: 2em;
+      font-size: 0.2e;
       background: #5C5A5A;
       color: white;
     }
@@ -157,8 +157,8 @@ const Calculator = {
     .grid-container {
       display: grid;
       grid-template-columns: auto auto auto;
-      width: 30em;
-      height: 34em;
+      max-width: 30em;
+      min-width: 12em;
       background: E1E0E0;
     }
     </style>
